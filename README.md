@@ -59,19 +59,10 @@ EndpointTroubleshooter provides a step-by-step diagnostic experience across thes
 
 ## Installation
 
-### Option 1: Install from PowerShell Gallery
+Install from PowerShell Gallery
 
 ```powershell
 Install-Module EndpointTroubleshooter -Scope CurrentUser
-Start-EndpointTroubleshooter
-```
-
-### Option 2: Run directly from this repository
-
-```powershell
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-Import-Module .\EndpointTroubleshooter\EndpointTroubleshooter.psd1 -Force
-Get-Command -Module EndpointTroubleshooter
 Start-EndpointTroubleshooter
 ```
 
