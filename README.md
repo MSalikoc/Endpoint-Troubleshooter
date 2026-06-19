@@ -6,6 +6,53 @@ EN: https://lnkd.in/eQfNi5eV
 
 # EndpointTroubleshooter
 
+Endpoint Troubleshooter v1.1.0 Release Notes
+
+Endpoint Troubleshooter v1.1.0 introduces two key improvements focused on better reporting and local policy visibility.
+
+What’s New
+Enhanced Export Summary
+
+The Export Summary report has been improved with a more detailed and structured HTML output.
+
+The report now includes:
+
+Report generation date and time
+Device information
+Defender Antivirus status
+Microsoft Defender for Endpoint / Sense details
+Intune Management Extension details
+Identity and enrollment information
+Network, proxy and firewall details
+Recent Defender, Sense and Device Management events
+Dashboard quick findings
+
+This makes the export more useful for troubleshooting, documentation, support cases and internal investigations.
+
+Local Policy Evidence
+
+A new Local Policy Evidence section has been added.
+
+This section provides local visibility into policy evidence available on the endpoint, including:
+
+Defender effective settings
+Defender policy registry evidence
+Intune / MDM PolicyManager evidence
+Recent Device Management policy events
+
+ASR rules are intentionally excluded from this section because they already have a dedicated ASR view in the tool.
+
+Notes
+
+This release focuses on local endpoint evidence. It does not yet correlate local settings with Intune policy display names from the cloud. Cloud-side policy correlation may be added in a future release with Microsoft Graph integration.
+
+Update
+Update-Module EndpointTroubleshooter
+Install
+Install-Module EndpointTroubleshooter -Scope CurrentUser
+Start-EndpointTroubleshooter
+
+
 EndpointTroubleshooter is a Windows PowerShell GUI toolkit for troubleshooting Microsoft-managed Windows endpoints from a single interface.
 
 It helps administrators and support engineers quickly inspect Microsoft Defender Antivirus, Microsoft Defender for Endpoint, Intune Management Extension, device join and MDM enrollment, network/proxy settings, Windows Firewall state, logs, and support data collection workflows.
