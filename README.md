@@ -4,8 +4,7 @@ Read Articles;
 TR: https://lnkd.in/eW25_pqY
 EN: https://lnkd.in/eQfNi5eV
 
-# EndpointTroubleshooter
-
+# Release Notes;
 ## 🚀 Endpoint Troubleshooter v1.1.0
 
 Endpoint Troubleshooter **v1.1.0** is now available.
