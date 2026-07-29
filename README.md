@@ -5,6 +5,22 @@ TR: https://lnkd.in/eW25_pqY
 EN: https://lnkd.in/eQfNi5eV
 
 # Release Notes;
+## 🚀 Endpoint Troubleshooter v1.2 
+
+* Health Rule Engine — Dashboard now shows severity-ranked findings (Critical / Warning / Info / OK) with a concrete recommendation per finding. Rules cover signature age, passive mode without a 3rd-party AV, missing PRT, expiring certificates, stale sensor connection, * BitLocker/TPM/Secure Boot and more.
+* Device Health panel — Compliance-relevant checks in one place: BitLocker, TPM, Secure Boot, VBS/HVCI, Credential Guard, LSA Protection (RunAsPPL), Network Protection/SmartScreen, pending reboot, uptime, time sync (w32tm) and last Windows Update success.
+* Identity checks — Azure AD PRT status & expiry, Intune MDM device certificate and MS-Organization-Access (AAD device) certificate with expiry evaluation.
+* MDE deep-dive — Last connected time, sensor (MsSense.exe) version, running mode, device tag, SenseCM state, third-party AV detection and MAPS/cloud validation via MpCmdRun -ValidateMapsConnection.
+* Enrollment error decoding — Device Management events (e.g. 0x80180026, 0x8018002a, 0xcaa9001f) are translated into plain-language causes.
+* IME log summary — Recent Win32 app activity and errors, plus scheduled task LastRunTime/LastResult.
+* Co-management / Autopilot / WNS checks.
+* JSON export and a headless mode (-NoGui / -ExportJson) suitable for Intune remediation scripts (non-zero exit on critical findings).
+* Support bundle now includes MDM Diagnostics report, health findings, device-health snapshot and a sensitive-data warning.
+🔧 Updated
+* MDE connectivity test uses streamlined (post-2023) endpoints (*.endpoint.security.microsoft.com, x.cp.wd.microsoft.com, events.data.microsoft.com) alongside legacy gateways.
+* Refreshed UI — color-coded status cards, styled data grids and severity-colored findings.
+* Global TLS 1.2 and per-run transcript logging.
+
 ## 🚀 Endpoint Troubleshooter v1.1.0
 
 Endpoint Troubleshooter **v1.1.0** is now available.
